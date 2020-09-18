@@ -7,3 +7,7 @@ class Product:
     def __str__(self):
         string = ' pid: {self.id}, name: {self.name}, description: {self.description} '.format(self=self)
         return string
+
+    def __eq__(self, other):
+        is_equal = (self.id == other.id) and (self.name == other.name) and (self.description == other.description)
+        return is_equal

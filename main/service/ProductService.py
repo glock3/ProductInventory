@@ -1,4 +1,4 @@
-from main.entity.Product import Product
+from main.entity import Product
 import random
 
 
