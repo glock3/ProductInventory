@@ -12,6 +12,10 @@ class InventoryService:
         product = self.productService.create_product()
         self.add_to_inventory(product)
 
+    def create_and_add_new_product_by_prepared_product_id(self, id):
+        product = self.productService.create_product_custom_for_test(id)
+        self.add_to_inventory(product)
+
     def add_to_inventory(self, product):
         if product is None:
             raise Exception('None passed to inventory')

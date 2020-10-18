@@ -1,4 +1,4 @@
-from main.entity import Product
+from main.entity.Product import Product
 import random
 
 
@@ -13,9 +13,13 @@ class ProductService:
                                                 "Cool thing!"]
 
     def create_product(self):
-        product_id = self.incremented_index
-        self.incremented_index += 1
-        product_name = self.predefined_product_names[random.randint(0, 4)]
-        product_description = self.predefined_product_descriptions[random.randint(0, 4)]
-        product = Product(product_id, product_name, product_description)
-        return product
+        # product_id = self.incremented_index
+        # self.incremented_index += 1
+        # product_name = self.predefined_product_names[random.randint(0, 4)]
+        # product_description = self.predefined_product_descriptions[random.randint(0, 4)]
+        # product = Product(product_id, product_name, product_description)
+        # return product
+        pass
+
+    def create_product_custom_for_test(self):
+        pass
